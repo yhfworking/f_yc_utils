@@ -26,6 +26,8 @@ dependencies:
   webview_flutter: ^3.0.4
   pull_to_refresh_flutter3: ^2.0.1
   google_fonts: ^3.0.1
+  url_launcher: ^6.1.5
+  get_storage: ^2.0.3
   
 
 dev_dependencies:
