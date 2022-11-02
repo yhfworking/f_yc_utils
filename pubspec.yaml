@@ -16,6 +16,7 @@ dependencies:
   flutter_easyloading: ^3.0.5
   crypto: ^3.0.2
   get: ^4.6.5
+  get_storage: ^2.0.3
   battery_plus: ^2.1.4+1
   connectivity_plus: ^2.3.6+1
   device_info_plus: ^4.1.2
@@ -27,7 +28,6 @@ dependencies:
   pull_to_refresh_flutter3: ^2.0.1
   google_fonts: ^3.0.1
   url_launcher: ^6.1.5
-  get_storage: ^2.0.3
   
 
 dev_dependencies:
