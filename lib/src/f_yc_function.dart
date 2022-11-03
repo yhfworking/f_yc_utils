@@ -11,7 +11,7 @@ enum FunctionType {
 
 typedef VoidFunction = void Function();
 
-class FunctionUtils {
+class FYcFunction {
   // ignore: prefer_final_fields
   static Map<String, Timer> _wrappers = {};
 
@@ -102,11 +102,11 @@ extension EventFilterExtension on State {
   stateFilter(String sign, Function function,
       {Duration duration = _defaultDuration,
       FunctionType functionType = FunctionType.debounce}) {
-    FunctionUtils.execute("${hashCode.toString()}$sign", function,
+    FYcFunction.execute("${hashCode.toString()}$sign", function,
         duration: duration, functionType: functionType);
   }
 
   clearStateFilter() {
-    FunctionUtils.removeState(hashCode.toString());
+    FYcFunction.removeState(hashCode.toString());
   }
 }

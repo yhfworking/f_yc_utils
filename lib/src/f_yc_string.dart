@@ -7,7 +7,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:safe_device/safe_device.dart';
 import 'package:uuid_helper/uuid_helper.dart';
 
-class StringUtils {
+class FYcString {
   ///获取全局唯一UUID
   static Future<String> uuid() async {
     var uuid = await UUIDHelper.getUniqueId();

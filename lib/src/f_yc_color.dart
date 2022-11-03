@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/widgets.dart';
 
-class ColorUtils {
+class FYcColor {
   ///生成随机颜色
   static Color randomColor() {
     return Color.fromRGBO(

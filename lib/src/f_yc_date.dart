@@ -1,4 +1,4 @@
-class DateUtils {
+class FYcDate {
   ///获取现在的时间戳
   static int nowTimestamp() {
     var nowTime = DateTime.now();

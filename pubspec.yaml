@@ -13,21 +13,14 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  flutter_easyloading: ^3.0.5
   crypto: ^3.0.2
-  get: ^4.6.5
-  get_storage: ^2.0.3
-  battery_plus: ^2.1.4+1
-  connectivity_plus: ^2.3.6+1
-  device_info_plus: ^4.1.2
-  package_info_plus: ^1.4.3+1
-  safe_device: ^1.1.1
   uuid_helper: ^1.0.0
-  flustars_flutter3: ^3.0.0
-  webview_flutter: ^3.0.4
-  pull_to_refresh_flutter3: ^2.0.1
-  google_fonts: ^3.0.1
-  url_launcher: ^6.1.5
+  package_info_plus: ^3.0.1
+  get: ^4.6.5
+  battery_plus: ^3.0.2
+  connectivity_plus: ^3.0.2
+  device_info_plus: ^8.0.0
+  safe_device: ^1.1.1
   
 
 dev_dependencies:

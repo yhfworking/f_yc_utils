@@ -1,4 +1,4 @@
-class ValidatorUtils {
+class FYcValidator {
   /// 检查邮箱格式
   static bool duIsEmail(String? input) {
     if (input == null || input.isEmpty) return false;
