@@ -36,7 +36,9 @@ class FYcString {
   }
 
   static String os() {
-    return GetPlatform.isIOS ? 'ios' : (GetPlatform.isAndroid ? 'android' : '');
+    return GetPlatform.isIOS
+        ? 'ios'
+        : (GetPlatform.isAndroid ? 'android' : '未知平台');
   }
 
   static Future<int> batteryLevel() async {
@@ -62,22 +64,23 @@ class FYcString {
 
   static Future<String> ua() async {
     Map<String, dynamic> map = Map.from({});
-    map['platform'] =
-        GetPlatform.isIOS ? 'ios' : (GetPlatform.isAndroid ? 'android' : '');
+    map['platform'] = GetPlatform.isIOS
+        ? 'ios'
+        : (GetPlatform.isAndroid ? 'android' : '未知平台');
     DeviceInfoPlugin deviceInfoPlugin = DeviceInfoPlugin();
     if (GetPlatform.isIOS) {
       IosDeviceInfo iosDeviceInfo = await deviceInfoPlugin.iosInfo;
-      map['deviceInfo'] = iosDeviceInfo.toMap();
+      map['deviceInfo'] = iosDeviceInfo.data;
     } else if (GetPlatform.isAndroid) {
       AndroidDeviceInfo androidDeviceInfo = await deviceInfoPlugin.androidInfo;
       map['deviceInfo'] = {
-        "brand": androidDeviceInfo.brand ?? '',
-        "device": androidDeviceInfo.device ?? '',
-        "display": androidDeviceInfo.display ?? '',
-        "model": androidDeviceInfo.model ?? '',
-        "product": androidDeviceInfo.product ?? '',
+        "brand": androidDeviceInfo.brand,
+        "device": androidDeviceInfo.device,
+        "display": androidDeviceInfo.display,
+        "model": androidDeviceInfo.model,
+        "product": androidDeviceInfo.product,
         "isPhysicalDevice": androidDeviceInfo.isPhysicalDevice,
-        "androidId": androidDeviceInfo.id ?? ''
+        "androidId": androidDeviceInfo.id
       };
     }
     map['platform'] = platform();
