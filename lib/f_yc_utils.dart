@@ -11,3 +11,4 @@ export './src/f_yc_logger.dart';
 export './src/f_yc_security.dart';
 export './src/f_yc_string.dart';
 export './src/f_yc_validator.dart';
+export './src/f_yc_event_bus.dart';
